@@ -701,18 +701,6 @@ $tags = array_values($tags);
           <h2>ارتباط با ما</h2>
         </div>
         <div class="row mt-1">
-          <div class="col-lg-8">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>آدرس</h4>
-                <p>
-                  تهران 15 خرداد بازار بزرگ بازار آهنگران کوچه مسجد جامع پاساژ
-                  کاغذ و تحریر طبقه همکف پلاک 8
-                </p>
-              </div>
-            </div>
-          </div>
           <div class="col-lg-4">
             <div class="info">
               <div class="address">
