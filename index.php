@@ -1,6 +1,19 @@
 <?php
 
+function baseUrl($url)
+{
+  return $url;
+}
+
 $data = [
+  'blog' => [
+    'title' => 'شهاب تحریر',
+    'logo' => 'logo.png',
+  ],
+  'seo' => [
+    'slug' => 'نامی مطمئن',
+    'description' => "وجود سابقه زیاد و تجربه کافی که گواه آن تولید محصولات با کیفیت و با تنوع بالا در زمینه ملزومات اداری است ما را بر این داشته تا خود را در جهت رضایت هر چه بیشتری مشتریان قرار دهیم",
+  ],
   'products' => [
     [
       'title' => 'پایه چسب مدل N36',
@@ -191,7 +204,9 @@ $data = [
       'tags' => [
         'جا کارتی',
       ],
-      'images' => [],
+      'images' => [
+        '5010.jpg',
+      ],
     ],
     [
       'title' => 'جایادداشتی مدل 2012',
@@ -204,7 +219,9 @@ $data = [
       'tags' => [
         'جا یادداشتی',
       ],
-      'images' => [],
+      'images' => [
+        '2012.jpg',
+      ],
     ],
     [
       'title' => 'جایادداشتی مدل 2011',
@@ -230,7 +247,9 @@ $data = [
       'tags' => [
         'جا قلمی',
       ],
-      'images' => [],
+      'images' => [
+        '2010.jpg',
+      ],
     ],
     [
       'title' => 'جا قلمی بلوری مدل 6020',
@@ -243,7 +262,9 @@ $data = [
       'tags' => [
         'جا قلمی',
       ],
-      'images' => [],
+      'images' => [
+        '6020.jpg',
+      ],
     ],
     [
       'title' => 'جا قلمی فلزی مدل 6030',
@@ -256,7 +277,9 @@ $data = [
       'tags' => [
         'جا قلمی',
       ],
-      'images' => [],
+      'images' => [
+        '6030.jpg',
+      ],
     ],
     [
       'title' => 'جا قلمی مرمری مدل 6010',
@@ -298,7 +321,9 @@ $data = [
       'tags' => [
         'زیر دستی',
       ],
-      'images' => [],
+      'images' => [
+        '8020.jpg',
+      ],
     ],
     [
       'title' => 'زیر دستی چرمی مدل 8010',
@@ -311,7 +336,9 @@ $data = [
       'tags' => [
         'زیر دستی',
       ],
-      'images' => [],
+      'images' => [
+        '8010.jpg',
+      ],
     ],
     [
       'title' => 'زیرپایی ثابت مدل 8060',
@@ -323,7 +350,9 @@ $data = [
       'tags' => [
         'زیر پایی',
       ],
-      'images' => [],
+      'images' => [
+        '8060.jpg',
+      ],
     ],
     [
       'title' => 'زیرپایی متحرک مدل 8070',
@@ -404,7 +433,9 @@ $data = [
       'tags' => [
         'غشگیر',
       ],
-      'images' => [],
+      'images' => [
+        '4020.jpg',
+      ],
     ],
     [
       'title' => 'زیر تقویم توری مدل 2062',
@@ -417,7 +448,9 @@ $data = [
       'tags' => [
         'زیر تقویم',
       ],
-      'images' => [],
+      'images' => [
+        '2062.jpg',
+      ],
     ],
     [
       'title' => 'زیر تقویم ثابت مدل 2052',
@@ -430,7 +463,9 @@ $data = [
       'tags' => [
         'زیر تقویم',
       ],
-      'images' => [],
+      'images' => [
+        '2052.jpg',
+      ],
     ],
     [
       'title' => 'زیر تقویم متحرک مدل 2042',
@@ -443,7 +478,9 @@ $data = [
       'tags' => [
         'زیر تقویم',
       ],
-      'images' => [],
+      'images' => [
+        '2042.jpg',
+      ],
     ],
     [
       'title' => 'زیر تقویم کریستال مدل 2020',
@@ -456,7 +493,9 @@ $data = [
       'tags' => [
         'زیر تقویم',
       ],
-      'images' => [],
+      'images' => [
+        '2020.jpg',
+      ],
     ],
     [
       'title' => 'زیر تقویم کریستال مدل 2030',
@@ -469,7 +508,9 @@ $data = [
       'tags' => [
         'زیر تقویم',
       ],
-      'images' => [],
+      'images' => [
+        '2030.jpg',
+      ],
     ],
     [
       'title' => 'جاکارتی مدل 5030',
@@ -482,7 +523,9 @@ $data = [
       'tags' => [
         'جا کارتی',
       ],
-      'images' => [],
+      'images' => [
+        '5030.jpg',
+      ],
     ],
     [
       'title' => 'جاکارتی مدل 5020',
@@ -495,7 +538,9 @@ $data = [
       'tags' => [
         'جا کارتی',
       ],
-      'images' => [],
+      'images' => [
+        '5020.jpg',
+      ],
     ],
   ],
 ];
@@ -516,13 +561,19 @@ $tags = array_values($tags);
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>شهاب تحریر | نامی مطمئن</title>
-  <meta name="keywords" content="شهاب تحریر,نامی مطمئن,shahabtahrir,زیر دستی,جا قلمی,جا یادداشتی,جا کارتی,زیر تقویم,زیر پایی,ست اداری,غشگیر,پایه چسب,پرچم,شهاب تحریر,shahabtahrir,شهاب تحریر-shahabtahrir,شهاب تحریر-نامی مطمئن,زیر دستی,جا قلمی,جا یادداشتی,جا کارتی,زیر تقویم,زیر پایی,ست اداری,غشگیر,پایه چسب,پرچم,نمایندگی فروش شهاب تحریر,فروش شهاب تحریر,خرید اینترنتی محصولات شهاب تحریر,فروشگاه شهاب تحریر,فروشگاه اینترنتی شهاب تحریر,فروشگاه آنلاین شهاب تحریر,خرید آنلاین شهاب تحریر">
-  <meta name="description" content="وجود سابقه زیاد و تجربه کافی که گواه آن تولید محصولات با کیفیت و با تنوع بالا در زمینه ملزومات اداری است ما را بر این داشته تا خود را در جهت رضایت هر چه بیشتری مشتریان قرار دهیم">
+  <title><?= $data['blog']['title'] ?> | <?= $data['seo']['slug'] ?></title>
+  <meta name="keywords" content="<?= $data['blog']['title'] ?>,<?= $data['seo']['slug'] ?>,shahabtahrir,زیر دستی,جا قلمی,جا یادداشتی,جا کارتی,زیر تقویم,زیر پایی,ست اداری,غشگیر,پایه چسب,پرچم,<?= $data['blog']['title'] ?>,shahabtahrir,<?= $data['blog']['title'] ?>-shahabtahrir,<?= $data['blog']['title'] ?> | <?= $data['seo']['slug'] ?> ,زیر دستی,جا قلمی,جا یادداشتی,جا کارتی,زیر تقویم,زیر پایی,ست اداری,غشگیر,پایه چسب,پرچم,نمایندگی فروش <?= $data['blog']['title'] ?>,فروش <?= $data['blog']['title'] ?>,خرید اینترنتی محصولات <?= $data['blog']['title'] ?>,فروشگاه <?= $data['blog']['title'] ?>,فروشگاه اینترنتی <?= $data['blog']['title'] ?>,فروشگاه آنلاین <?= $data['blog']['title'] ?>,خرید آنلاین <?= $data['blog']['title'] ?>">
+  <meta name="description" content="<?= $data['seo']['description'] ?>">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
   <link href="assets/img/favicon.png" rel="apple-touch-icon" />
+
+  <style>
+    #hero {
+      background: url("<?= baseUrl('assets/img/hero-bg.png') ?>") top right no-repeat;
+    }
+  </style>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
@@ -537,12 +588,6 @@ $tags = array_values($tags);
 
   <link href="assets/css/font-sahel.css" rel="stylesheet" />
 
-  <!-- =======================================================
-  * Template Name: MyResume - v4.10.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body dir="rtl">
@@ -554,11 +599,11 @@ $tags = array_values($tags);
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li>
-          <a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>شهاب تحریر</span></a>
+          <a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span><?= $data['blog']['title'] ?></span></a>
         </li>
         <li>
           <a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-            <span>محصولات شهاب تحریر</span></a>
+            <span>محصولات <?= $data['blog']['title'] ?></span></a>
         </li>
         <li>
           <a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>ارتباط با ما</span></a>
@@ -575,7 +620,7 @@ $tags = array_values($tags);
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>شهاب تحریر <small class="text-muted">نامی مطمئن</small></h1>
+      <h1><?= $data['blog']['title'] ?> <small class="text-muted"><?= $data['seo']['slug'] ?></small></h1>
       <p>
         یعنی
         <span class="typed" data-typed-items="خلاقیت, تعهد, زیبایی, شکوه"></span>
@@ -589,13 +634,13 @@ $tags = array_values($tags);
     <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>محصولات شهاب تحریر</h2>
+          <h2>محصولات <?= $data['blog']['title'] ?></h2>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active w-100"><strong>همه محصولات شهاب تحریر</strong></li>
+              <li data-filter="*" class="filter-active w-100"><strong>همه محصولات <?= $data['blog']['title'] ?></strong></li>
               <?php
               foreach ($tags as $tag) {
                 echo '<li data-filter=".filter-' . crc32($tag) . '"><strong>' . $tag . '</strong></li>';
@@ -619,7 +664,7 @@ $tags = array_values($tags);
                 <?php
                 echo '<span class="d-inline-block p-3">' . $product['title'] . '</span>';
                 foreach ($images as $image) {
-                  echo '<img src="https://shahab-tahrir.ir/assets/img/portfolio/' . $image . '" class="img-fluid" alt="' . htmlspecialchars($product['title'], ENT_QUOTES, 'UTF-8') . '" />';
+                  echo '<img src="' . baseUrl('assets/img/portfolio/' . $image) . '" class="img-fluid" alt="' . htmlspecialchars($product['title'], ENT_QUOTES, 'UTF-8') . '" />';
                 }
                 ?>
                 <div class="portfolio-info">
@@ -636,7 +681,7 @@ $tags = array_values($tags);
                   <div class="portfolio-links">
                     <?php
                     foreach ($images as $image) {
-                      echo '<a href="https://shahab-tahrir.ir/assets/img/portfolio/' . $image . '" data-gallery="portfolioGallery" class="portfolio-lightbox" title="' . $product['title'] . '"><i class="bx bx-plus"></i></a>';
+                      echo '<a href="' . baseUrl('assets/img/portfolio/' . $image) . '" data-gallery="portfolioGallery" class="portfolio-lightbox" title="' . $product['title'] . '"><i class="bx bx-plus"></i></a>';
                     }
                     ?>
                   </div>
@@ -687,11 +732,9 @@ $tags = array_values($tags);
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>شهاب تحریر</h3>
-      <p>
-        وجود سابقه زیاد و تجربه کافی که گواه آن تولید محصولات با کیفیت و با تنوع بالا در زمینه ملزومات اداری است ما را بر این داشته تا خود را در جهت رضایت هر چه بیشتری مشتریان قرار دهیم
-      </p>
-      <img src="https://shahab-tahrir.ir/assets/img/logo.png" alt="شهاب تحریر" />
+      <h3><?= $data['blog']['title'] ?></h3>
+      <p><?= $data['seo']['description'] ?></p>
+      <img src="<?= baseUrl('assets/img/' . $data['blog']['logo']) ?>" alt="<?= $data['blog']['title'] ?>" />
     </div>
   </footer>
   <!-- End Footer -->
