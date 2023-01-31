@@ -701,7 +701,9 @@ $tags = array_values($tags);
           <h2>ارتباط با ما</h2>
         </div>
         <div class="row mt-1">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
+          </div>
+          <div class="col-lg-6">
             <div class="info">
               <div class="address">
                 <i class="bi bi-telephone"></i>
