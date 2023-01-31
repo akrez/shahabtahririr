@@ -702,6 +702,13 @@ $tags = array_values($tags);
         </div>
         <div class="row mt-1">
           <div class="col-lg-6">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-telephone"></i>
+                <h4>تلفن</h4>
+                <p><a href="tel:+989102111553" dir="ltr">+989102111553</a></p>
+              </div>
+            </div>
           </div>
           <div class="col-lg-6">
             <div class="info">
