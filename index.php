@@ -31,6 +31,7 @@ $data['products'] = [
       'n36.jpg'
     ],
   ],
+  /*
   [
     'title' => 'پایه چسب مدل 2014',
     'disabled_at' => null,
@@ -45,6 +46,7 @@ $data['products'] = [
     ],
     'images' => [],
   ],
+  */
   [
     'title' => 'پایه چسب مدل 2500',
     'disabled_at' => null,
@@ -381,6 +383,7 @@ $data['products'] = [
       '8060.jpg',
     ],
   ],
+  /*
   [
     'title' => 'زیرپایی متحرک مدل 8070',
     'disabled_at' => null,
@@ -394,6 +397,7 @@ $data['products'] = [
     ],
     'images' => [],
   ],
+  */
   [
     'title' => 'پرچم رومیزی مرمری مدل 7060',
     'disabled_at' => null,
@@ -426,6 +430,7 @@ $data['products'] = [
       '7070.jpg'
     ],
   ],
+  /*
   [
     'title' => 'نگهدارنده کتاب مدل 4010',
     'disabled_at' => null,
@@ -440,6 +445,7 @@ $data['products'] = [
     ],
     'images' => [],
   ],
+  */
   [
     'title' => 'نگهدارنده کتاب مدل 4030',
     'disabled_at' => null,
