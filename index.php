@@ -10,7 +10,7 @@ $data['blog'] = [
   'name' => 'shahabtahrir',
   'title' => 'شهاب تحریر',
   'logo' => 'logo.png',
-  'hero' => 'hero-bg.png',
+  'hero' => 'hero-bg2.jpg',
   'slug' => 'نامی مطمئن',
 ];
 $data['products'] = [
