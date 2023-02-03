@@ -799,7 +799,7 @@ $data['seo']['keywords'] = array_merge($data['seo']['keywords'], $tags);
     <div class="container">
       <h3><?= $data['blog']['title'] ?></h3>
       <p><?= $data['seo']['description'] ?></p>
-      <img src="<?= baseUrl('assets/img/' . $data['blog']['logo']) ?>" alt="<?= $data['blog']['title'] ?>" />
+      <img class="img-fluid" src="<?= baseUrl('assets/img/' . $data['blog']['logo']) ?>" alt="<?= $data['blog']['title'] ?>" />
     </div>
   </footer>
   <!-- End Footer -->
