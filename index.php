@@ -774,7 +774,7 @@ $data['seo']['keywords'] = array_merge($data['seo']['keywords'], $tags);
               <div class="address">
                 <i class="bi bi-telephone"></i>
                 <div class="h4">تلفن</div>
-                <p><a href="tel:+989102111553" dir="ltr">+989102111553</a></p>
+                <p><a href="tel:+989303860199" dir="ltr">+989303860199</a></p>
               </div>
             </div>
           </div>
