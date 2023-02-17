@@ -4,6 +4,7 @@ require_once './db.php';
 
 $db->create('visits', [
   'user_agent'  => $_SERVER['HTTP_USER_AGENT'],
+  'ip'          => isset($_SERVER['HTTP_CLIENT_IP']) ? $_SERVER['HTTP_CLIENT_IP'] : (isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR']),
   'url'         => (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]",
   'visited_at'  => date('Y-m-d H:i:s'),
   'request'     => json_encode($_REQUEST),

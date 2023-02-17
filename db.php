@@ -97,6 +97,7 @@ class MyDb extends Db
             CREATE TABLE visits (
                 id          INTEGER PRIMARY KEY,
                 user_agent  TEXT,
+                ip          TEXT,
                 url         TEXT,
                 visited_at  TEXT,
                 request     TEXT
