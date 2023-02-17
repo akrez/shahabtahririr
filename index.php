@@ -673,7 +673,7 @@ $data['seo']['keywords'] = array_merge($data['seo']['keywords'], $tags);
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
     <nav id="navbar" class="navbar nav-menu">
-      <ul>
+      <ul dir="ltr">
         <li>
           <a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span><?= $data['blog']['title'] ?></span></a>
         </li>
