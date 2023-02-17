@@ -1,5 +1,13 @@
 <?php
 
+require_once './db.php';
+
+$db->create('visits', [
+  'user_agent'  => $_SERVER['HTTP_USER_AGENT'],
+  'url'         => (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]",
+  'request'     => json_encode($_REQUEST),
+]);
+
 function baseUrl($url)
 {
   return $url;
