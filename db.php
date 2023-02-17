@@ -98,6 +98,7 @@ class MyDb extends Db
                 id          INTEGER PRIMARY KEY,
                 user_agent  TEXT,
                 url         TEXT,
+                visited_at  TEXT,
                 request     TEXT
             );
         ');

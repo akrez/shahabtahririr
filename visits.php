@@ -18,6 +18,7 @@ $visits = $db->fetch("SELECT * FROM visits ORDER BY id DESC LIMIT 500");
                 <th> id </th>
                 <th> user_agent </th>
                 <th> url </th>
+                <th> visited_at </th>
                 <th> request </th>
             </tr>
         </thead>
@@ -27,6 +28,7 @@ $visits = $db->fetch("SELECT * FROM visits ORDER BY id DESC LIMIT 500");
                     <td> <?= htmlspecialchars($visit['id'], ENT_QUOTES, 'UTF-8') ?> </td>
                     <td> <?= htmlspecialchars($visit['user_agent'], ENT_QUOTES, 'UTF-8') ?> </td>
                     <td> <?= htmlspecialchars($visit['url'], ENT_QUOTES, 'UTF-8') ?> </td>
+                    <td> <?= htmlspecialchars($visit['visited_at'], ENT_QUOTES, 'UTF-8') ?> </td>
                     <td> <?= htmlspecialchars($visit['request'], ENT_QUOTES, 'UTF-8') ?> </td>
                 </tr>
             <?php } ?>
