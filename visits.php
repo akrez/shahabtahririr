@@ -1,6 +1,6 @@
 <?php
 require_once './db.php';
-$visits = $db->fetch("SELECT * FROM visits ORDER BY id DESC LIMIT 500");
+$visits = $db->fetch('SELECT * FROM visits WHERE user_agent NOT LIKE "%bot%" ORDER BY id DESC LIMIT 500');
 ?>
 <!DOCTYPE html>
 <html lang="en">
